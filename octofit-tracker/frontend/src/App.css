@@ -1,5 +1,12 @@
+
+body {
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+  min-height: 100vh;
+}
+
 .App {
   text-align: center;
+  color: #2a2a72;
 }
 
 .App-logo {
@@ -13,19 +20,80 @@
   }
 }
 
+
 .App-header {
-  background-color: #282c34;
+  background: #2a2a72;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #fff;
 }
 
+
 .App-link {
-  color: #61dafb;
+  color: #ff6f61;
+  font-weight: 500;
+}
+
+.navbar {
+  background: linear-gradient(90deg, #2a2a72 0%, #009ffd 100%) !important;
+  border-radius: 0.5rem;
+}
+.navbar .navbar-brand, .navbar .nav-link {
+  color: #fff !important;
+  font-weight: 600;
+}
+.navbar .nav-link.active, .navbar .nav-link:focus, .navbar .nav-link:hover {
+  color: #ff6f61 !important;
+}
+
+.card {
+  border-radius: 1rem;
+  box-shadow: 0 2px 12px rgba(42,42,114,0.08);
+}
+.card-title {
+  color: #009ffd !important;
+  font-weight: 700;
+}
+
+.table {
+  background: #fff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.table thead {
+  background: #009ffd;
+  color: #fff;
+}
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #e0eafc;
+}
+.table-bordered th, .table-bordered td {
+  border-color: #009ffd;
+}
+
+.btn-primary {
+  background: #009ffd;
+  border: none;
+  font-weight: 600;
+}
+.btn-primary:hover {
+  background: #2a2a72;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #2a2a72;
+  font-weight: 700;
+}
+
+/* Logo styling */
+.octofit-logo {
+  height: 48px;
+  margin-right: 1rem;
+  vertical-align: middle;
 }
 
 @keyframes App-logo-spin {
